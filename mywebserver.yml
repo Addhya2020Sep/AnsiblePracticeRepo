@@ -20,9 +20,15 @@
       state: present
     when: ansible_os_family =="Debian"  
 
-  - name: i want to install git on redhat
+  - name: i want to install webserver on redhat
     yum:
       name: httpd
-      state: started
+      state: present
     when: ansible_os_family =="RedHat"  
+
+  - name: i want to start webserver on Redhat
+    service:
+      name: httpd
+      state: started
+    when: ansible_os_family =="RedHat"    
 
