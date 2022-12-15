@@ -3,17 +3,17 @@
   become: yes
   tasks: 
   - name: i want to install tree
-     apt:
-     name: tree
-     state: present
+      apt:
+      name: tree
+      state: present
   
   - name: i want to install wget
-     apt: 
-     name: wget
-     state: present
+      apt: 
+      name: wget
+      state: present
 
   - name: i want to install webserver apache2
-     apt:
-     name: apache2
-     state: present
+      apt:
+      name: apache2
+      state: present
 
